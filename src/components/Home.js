@@ -1,3 +1,4 @@
+import React from 'react';
 import {useState, useEffect } from 'react'
 import HouseList from './HouseList';
 
@@ -9,15 +10,13 @@ const handleDelete = (id) => {
     setHouses(newHouses)
 }
 useEffect(() => {
-    fetch('http://localhost:3001/houses')
-        .then(res => {
-           return res.json();
-        })
-        .then(data => {
-            console.log(data)
-        })
+    fetch('http://localhost:3000/houses')
+        .then((res) => res.json())
+        .then((data) => {
+            console.log(data);
+        });
 
-}, [])
+}, []);
 
     return (  
         <div className="home">

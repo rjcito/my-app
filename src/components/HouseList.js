@@ -1,3 +1,5 @@
+import React from 'react';
+
 const HouseList = ({ houses, title, handleDelete }) => {
     return (  
         <div className="blog-list">
