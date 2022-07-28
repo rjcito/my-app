@@ -1,5 +1,5 @@
-import React from 'react';
-import {useState, useEffect } from 'react'
+import React, { useState, useEffect } from 'react';
+
 import HouseList from './HouseList';
 
 const Home = () => {
@@ -13,15 +13,15 @@ useEffect(() => {
     fetch('http://localhost:3000/houses')
         .then((res) => res.json())
         .then((data) => {
-            console.log(data);
+            setHouses(data);
         });
 
 }, []);
 
     return (  
         <div className="home">
-            {/*<HouseList houses={houses} title = "Current Houses:" handleDelete ={handleDelete}/>
-            <HouseList houses={houses.filter((house) => house.cleaner ==="Rosa")} title="Rosa's Houses" />*/}
+            {houses && <HouseList houses={houses} title = "Current Houses:" handleDelete ={handleDelete}/>}
+            {houses && <HouseList houses={houses.filter((house) => house.cleaner ==="Rosa")} title="Rosa's Houses" />}
         
         </div>
     );
