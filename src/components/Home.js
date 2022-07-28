@@ -12,6 +12,7 @@ const Home = () => {
     return (  
         <div className="home">
             <HouseList houses={houses} title = "Current Houses:"/>
+            <HouseList houses={houses.filter((house) => house.cleaner ==="Rosa")} title="Rosa's Houses" />
         </div>
     );
 }
