@@ -1,4 +1,4 @@
-import {useState } from 'react'
+import {useState, useEffect } from 'react'
 import HouseList from './HouseList';
 
 const Home = () => {
@@ -12,6 +12,11 @@ const handleDelete = (id) => {
     const newHouses = houses.filter(house => house.id !== id)
     setHouses(newHouses)
 }
+useEffect(()=> {
+    console.log('useEffect ran')
+    console.log(houses)
+
+},[])
 
     return (  
         <div className="home">
