@@ -14,9 +14,9 @@ const handleDelete = (id) => {
 }
 useEffect(()=> {
     console.log('useEffect ran')
-    console.log(houses)
+   
 
-},[])
+}, [])
 
     return (  
         <div className="home">
