@@ -8,11 +8,16 @@ const Home = () => {
     { address: '0922 Giggling Dr', cleaner: 'Ruby', dayofweek: 'Wednesday', id: 3 }
 ]);
 
+const handleDelete = (id) => {
+    const newHouses = houses.filter(house => house.id !== id)
+    setHouses(newHouses)
+}
 
     return (  
         <div className="home">
-            <HouseList houses={houses} title = "Current Houses:"/>
+            <HouseList houses={houses} title = "Current Houses:" handleDelete ={handleDelete}/>
             <HouseList houses={houses.filter((house) => house.cleaner ==="Rosa")} title="Rosa's Houses" />
+        
         </div>
     );
 }
