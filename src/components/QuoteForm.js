@@ -19,15 +19,22 @@ const QuoteForm  = () => {
 
     const handleSubmit = (e)  => {
         e.preventDefault();
+        const itemData = {
+            address: address,
+            cleaner: cleanerName,
+            dayOfWeek: dayOfWeek,
+
+        };
         fetch("http://localhost:3000/houses", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
-
             },
-            body: JSON.stringify(formData),
+            body: JSON.stringify(itemData),
 
-        });
+        })
+            .then((r) => r.json())
+            .then((newItem) => console.log(newItem))
             
     }  
     return ( 
