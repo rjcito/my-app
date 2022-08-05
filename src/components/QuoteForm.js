@@ -19,8 +19,16 @@ const QuoteForm  = () => {
 
     const handleSubmit = (e)  => {
         e.preventDefault();
-        const newScheduleItem = { address, cleanerName, dayOfWeek }
-        console.log(newScheduleItem);
+        fetch("http://localhost:3000/houses", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+
+            },
+            body: JSON.stringify(formData),
+
+        });
+            
     }  
     return ( 
         <div className="quote-form">
