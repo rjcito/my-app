@@ -1,19 +1,24 @@
 {
-  "posts": [
-    {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "comments": [
-    {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
-    }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+    "houses": 
+    [
+        { 
+            "address": "1221 Happy Ln",
+            "cleaner": "Ruby", 
+            "dayofweek": "Monday", 
+            "id": 1 
+        },
+
+        { 
+            "address": "0508 Funny Rd", 
+            "cleaner": "Rosa",
+            "dayofweek": "Tuesday",
+            "id": 2 
+        },
+        { 
+            "address": "0922 Giggling Drive", 
+            "cleaner": "Rosa",
+            "dayofweek": "Wednesday",
+            "id": 3 
+        }
+    ]
 }

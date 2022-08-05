@@ -4,29 +4,34 @@
 * {
   margin: 0;
   font-family: "Bungee Inline";
-  color: #0368f4;
+  color: #0080ff;
 }
 .navbar {
-  padding: 20px;
+  padding: 10px;
   display: flex;
   align-items: center;
   max-width: 600px;
   margin: 0 auto;
-  border-bottom: 1px solid #760b3b;
+  border-bottom: 1px solid #000000;
 }
 .navbar h1 {
   color: #0368f4;
 }
 .navbar .links {
   margin-left: auto;
+  color: white;
+  background-color: #f1356d;
+  border-radius: 1px;
+
 }
 .navbar a {
+  color: white;
   margin-left: 16px;
   text-decoration: none;
-  padding: 6px;
+  padding: 1px;
 }
 .navbar a:hover {
-  color: #f1356d;
+  color: white;
 }
 .content {
   max-width: 600px;
@@ -47,4 +52,27 @@
   font-size: 20px;
   color: #f1356d;
   margin-bottom: 8px;
+}
+/* create new blog form */
+.quote-form {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+.quote-form label{
+  text-align: left;
+  display: block;
+}
+.quote-form input{
+  width: 100%;
+  color: rgb(0, 0, 0);
+  margin-bottom: 10px 0;
+}
+.quote-form button {
+  background: #f1356d;
+  color: #fff;
+  border: 0;
+  padding: 1px;
+  border-radius: 8px;
+  cursor: pointer;
 }
