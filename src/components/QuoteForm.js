@@ -22,7 +22,7 @@ const QuoteForm  = () => {
         const itemData = {
             address: address,
             cleaner: cleanerName,
-            dayOfWeek: dayOfWeek,
+            dayofweek: dayOfWeek,
 
         };
         fetch("http://localhost:3000/houses", {

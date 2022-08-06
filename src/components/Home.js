@@ -16,9 +16,10 @@ useEffect(() => {
 }, []);
 
     return (  
-        <div className="home">
-            {houses && <HouseList houses={houses} title = "Current Houses:" />}
-            {houses && <HouseList houses={houses.filter((house) => house.cleaner ==="Rosa")} title="Rosa's Houses" />}
+        <div className="rosas-houses">
+
+            <p1>{houses && <HouseList houses={houses} title = "All Houses:" />}</p1>
+            <p1>{houses && <HouseList houses={houses.filter((house) => house.cleaner ==="Rosa")} title="Rosa's Houses" />}</p1>
         
         </div>
     );
