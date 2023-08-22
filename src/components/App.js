@@ -32,7 +32,7 @@ function App() {
             <QuoteForm /> 
           </Route>
         </Switch>
-        <button onClick ={toggleTheme}>Dark Mode</button>
+        <button onClick ={toggleTheme}> {theme === 'light' ? 'Dark': 'Light'} Mode</button>
       </div>
     </div>
     </Router> 
