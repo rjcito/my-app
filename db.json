@@ -23,6 +23,12 @@
       "cleaner": "rosa ",
       "dayofweek": "thursday",
       "id": 4
+    },
+    {
+      "address": "19785 Elk Pl",
+      "cleaner": "Rosa",
+      "dayofweek": "Monday",
+      "id": 5
     }
   ]
 }
